@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Counter One -->
+      <div>
+        <h3>HOME</h3>
+        <div class="score-box" id="count-el">0</div>
+        <div class="score-numbers-box">
+          <div class="score-num" onclick="incOne()"><p>+1</p></div>
+          <div class="score-num" onclick="incTwo()"><p>+2</p></div>
+          <div class="score-num" onclick="incThree()"><p>+3</p></div>
+        </div>
+      </div>
+      <!-- Counter Two -->
+      <div>
+        <h3>GUEST</h3>
+        <div class="score-box" id="count-el2">0</div>
+        <div class="score-numbers-box">
+          <div class="score-num" onclick="incOne2()"><p>+1</p></div>
+          <div class="score-num" onclick="incTwo2()"><p>+2</p></div>
+          <div class="score-num" onclick="incThree2()"><p>+3</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="reset" onclick="resetBtn()"><button>reset</button></div>
+    <script src="./index.js"></script>
+  </body>
+  </html>
+  

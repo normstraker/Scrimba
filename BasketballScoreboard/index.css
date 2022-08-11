@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --gray-blue: #9aabd8;
+  --back-blue: #1b244a;
+}
+
+body {
+  background-color: grey;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 575px;
+  height: 385px;
+  background: var(--back-blue);
+}
+
+h3 {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 36px;
+  /* identical to box height, or 90% */
+  text-align: center;
+  color: #eeeeee;
+  margin: 68px auto 21px;
+}
+
+.score-box {
+  background-color: black;
+  width: 155px;
+  height: 120px;
+  left: 82px;
+  top: 125px;
+  font-family: "Cursed Timer ULiL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 134px;
+  /* or 141% */
+  text-align: center;
+  color: #f94f6d;
+}
+
+.score-numbers-box {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: var(--gray-blue); */
+  width: 155px;
+  height: 45px;
+  left: 82px;
+  top: 271px;
+  margin: 26px 0;
+  /* border: 2px solid var(--gray-blue); */
+}
+
+.score-num {
+  width: 45px;
+  height: 45px;
+  left: 82px;
+  top: 271px;
+  border: 2px solid var(--gray-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--gray-blue);
+}
+
+.score-num:hover {
+  border-color: var(--gray-blue);
+  color: var(--back-blue);
+  background-color: var(--gray-blue);
+}
+
+.score-num p {
+  text-align: center;
+  padding-top: 0.75rem;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  margin: 0;
+}
+
+.reset{
+  height: 40px;
+  width: 575px;
+  background-color: var(--back-blue);
+  /* align-items: center; */
+  text-align: center;
+  /* margin-bottom: 26px 0 0 0; */
+}
+
+button{
+  position: relative;
+  color: var(--gray-blue);
+  background-color: var(--back-blue);
+  font-family: "Cursed Timer ULiL", sans-serif;
+  padding: 10px 26px;
+  bottom: 26px;
+  left: 0;
+  border: 2px solid var(--gray-blue);
+  border-radius: 5px;
+}
+
+button:hover{
+  border-color: var(--gray-blue);
+  color: var(--back-blue);
+  background-color: var(--gray-blue);
+  cursor: pointer;
+}
